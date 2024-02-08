@@ -1,0 +1,230 @@
+
+
+.image-wrapper {
+    transition: all ease .5s;
+    position: relative;
+    cursor: pointer;
+    border-radius: 30px;
+    overflow: hidden;
+    width: 23%;
+  
+  }
+  
+  .features-box {
+    min-height: auto;
+    width: 90%;
+    margin: auto;
+  
+    display: flex;
+      transition: all ease .6s;
+      justify-content: space-around;
+      align-items: flex-start;
+      
+  }
+  
+  .features-box .image-wrapper p {
+    font-size: 1.2em;
+    line-height: 1.4em;
+    margin-top: 50px;
+  }
+  
+  .feature-images {
+    scale: 1;
+    transition: all ease .5s;
+    width: 100%;
+    height: 100%;
+    
+  }
+  
+  .diming-box {
+  
+    transition: all ease .5s;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .caption {
+    padding: 0 25px;
+    opacity: 0;
+    transition: all ease .5s;
+    position: absolute;
+  
+  }
+  
+  .image-title {
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  
+  .image-wrapper:hover {
+    width: 45%;
+  }
+  
+  .image-wrapper:hover .diming-box {
+    backdrop-filter: blur(10px);
+    background-color: rgba(33, 35, 41, 0.895);
+      overflow-y: auto;
+  }
+  .image-wrapper:hover .caption {
+    opacity: 1;
+    top: 20px;
+  }
+  
+  .image-wrapper:hover img {
+    scale: 1.2;
+  }
+  
+  @media (max-width: 700px) {
+      .features-box {
+          transition: all 0.5s ease;
+          padding: 40px;
+          display: flex;
+          flex-wrap: nowrap;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          column-gap: 30px;
+        }
+        
+        img {
+          width: 100%;
+        }
+        
+        .features-box .image-wrapper {
+          transition: inherit;
+            border: 1px solid grey;
+          overflow-y: hidden;
+          min-width: 90%;
+          position: relative;
+          border-radius: 20px;
+        }
+        
+        .features-box .image-wrapper .diming-box {
+          background-color: rgb(243, 243, 243);
+          transition: inherit;
+          position: absolute;
+          top: 85%;
+          padding: 0px 20px;
+          border-radius: inherit;
+        }
+        
+        .image-wrapper:hover .diming-box {
+            padding: 20px;
+        
+            overflow-y: auto;
+          backdrop-filter: blur(30px);
+          background-color: rgba(0, 0, 0, 0.589);
+          top: 5%;
+        }
+        
+        .image-wrapper:hover p {
+            color: white;
+        }
+             
+  }
+  
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer {
+    padding: 35px 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    background-color: rgb(6, 8, 17);
+  }
+  
+  .links-wrapper {
+    column-gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto 30px;
+  }
+  
+  .footer-logo {
+    width: 100px;
+  }
+  
+  .links-wrapper > div p {
+    color: rgb(245, 245, 245);
+  }
+  
+  .links-wrapper > div a {
+    text-decoration: none;
+    color: rgb(179, 179, 179);
+  }
+  
+  .links-wrapper > div .block-tilte {
+    margin: 10px 0;
+    font-weight: bold;
+  }
+  
+  .links-wrapper > div li {
+    margin: 15px 0;
+    list-style: none;
+  }
+  
+  .social-wrapper .footer-links {
+    column-gap: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .social-wrapper .footer-links img {
+    width: 22px;
+  }
+  
+  .rights {
+    user-select: none;
+    font-size: 0.7em;
+    padding: 30px 0;
+    color: rgb(182, 182, 182);
+    grid-column: 2/3;
+  }
+  
+  img {
+    fill: black;
+  }
+  
+  .links-wrapper > div a:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  
+  @media (max-width: 650px) {
+      .footer-logo {
+          transform: translateX(-30px);
+          width: 100px;
+        }
+  
+        .logo-link::after {
+          text-decoration: none;
+          content: "ElectroMart";
+          color: white;
+         position: relative;
+         bottom: 50px;
+        }
+  
+      .footer {
+          padding: 30px 50px;
+          display: block;
+      }
+  
+    .links-wrapper {
+      column-gap: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+  
