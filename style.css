@@ -80,6 +80,10 @@
   }
   
   @media (max-width: 700px) {
+    .caption {
+        font-size: 0.7em;
+    }
+
       .features-box {
           transition: all 0.5s ease;
           padding: 40px;
@@ -128,103 +132,4 @@
              
   }
   
-  
-  * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  footer {
-    padding: 35px 10px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0;
-    background-color: rgb(6, 8, 17);
-  }
-  
-  .links-wrapper {
-    column-gap: 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto 30px;
-  }
-  
-  .footer-logo {
-    width: 100px;
-  }
-  
-  .links-wrapper > div p {
-    color: rgb(245, 245, 245);
-  }
-  
-  .links-wrapper > div a {
-    text-decoration: none;
-    color: rgb(179, 179, 179);
-  }
-  
-  .links-wrapper > div .block-tilte {
-    margin: 10px 0;
-    font-weight: bold;
-  }
-  
-  .links-wrapper > div li {
-    margin: 15px 0;
-    list-style: none;
-  }
-  
-  .social-wrapper .footer-links {
-    column-gap: 30px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .social-wrapper .footer-links img {
-    width: 22px;
-  }
-  
-  .rights {
-    user-select: none;
-    font-size: 0.7em;
-    padding: 30px 0;
-    color: rgb(182, 182, 182);
-    grid-column: 2/3;
-  }
-  
-  img {
-    fill: black;
-  }
-  
-  .links-wrapper > div a:hover {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  }
-  
-  @media (max-width: 650px) {
-      .footer-logo {
-          transform: translateX(-30px);
-          width: 100px;
-        }
-  
-        .logo-link::after {
-          text-decoration: none;
-          content: "ElectroMart";
-          color: white;
-         position: relative;
-         bottom: 50px;
-        }
-  
-      .footer {
-          padding: 30px 50px;
-          display: block;
-      }
-  
-    .links-wrapper {
-      column-gap: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      flex-direction: column;
-    }
-  }
   
